@@ -1,6 +1,11 @@
-# My Epitech Relay
+# Epitech Intranet Relay
 
-A barely working relay for interacting with My Epitech endpoints without token.
+```
+:warning: Fully based on https://github.com/norech/my-epitech-relay
+:warning: Overkill solution or not?
+```
+
+A barely working relay for interacting with Epitech Intranet endpoints without token.
 
 ## About
 
@@ -38,7 +43,7 @@ or you will need to restart the relay.
 
 You will need to authenticate in this window, in the opened tab. Complete all
 authentication steps, click on "Stay logged in" everywhere you're asked, and
-wait until you are back on my.epitech.eu. The window should close.
+wait until you are back on intra.epitech.eu. The window should close.
 
 ### `NO_WINDOW` mode (or Docker)
 
@@ -67,11 +72,11 @@ Considering that you'll host it on `localhost:8080`.
 All requests will be proxied as specified below. You will NOT need any token.
 
 ```
-https://localhost:8080/epitest/*  =>  https://api.epitest.eu/*
+https://localhost:8080/intranet/*  =>  https://intra.epitech.eu/*
 ```
 
-For example, to get `https://api.epitest.eu/me/2021`,
-you'll need to call `http://localhost:8080/epitest/me/2021`.
+For example, to get `https://intra.epitech.eu/?format=json`,
+you'll need to call `http://localhost:8080/intranet/?format=json`.
 
 ## Troubleshooting
 
@@ -107,15 +112,15 @@ You must then clone this repo on the remote server and place the `cookies.json`
 inside.
 
 ```bash
-git clone https://github.com/norech/my-epitech-relay.git
-cp /somewhere/cookies.json my-epitech-relay
+git clone https://github.com/alwyn974/intra-epitech-relay.git
+cp /somewhere/cookies.json intra-epitech-relay
 ```
 
 And then run `docker-compose` commands to build and run.
 
 ```bash
 # go to relay repository folder
-cd my-epitech-relay
+cd intra-epitech-relay
 
 # build the image
 docker-compose build

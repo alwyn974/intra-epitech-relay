@@ -1,13 +1,14 @@
 {
-  "name": "my-epitech-relay",
+  "name": "intra-epitech-relay",
   "version": "0.1.0",
   "description": "",
   "main": "out/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node out/index.js"
+    "start": "node out/index.js",
+    "launch": "npm run build && npm start"
   },
-  "author": "Norech",
+  "author": "Norech, Alwyn974",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
