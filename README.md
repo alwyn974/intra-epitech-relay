@@ -1,8 +1,8 @@
 # Epitech Intranet Relay
 
 ```
-:warning: Fully based on https://github.com/norech/my-epitech-relay
-:warning: Overkill solution or not?
+⚠️ Fully based on https://github.com/norech/my-epitech-relay
+⚠️ Overkill solution or not?
 ```
 
 A barely working relay for interacting with Epitech Intranet endpoints without token.
